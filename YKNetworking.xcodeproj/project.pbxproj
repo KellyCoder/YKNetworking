@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E418426C2091844DD61CCAB /* Pods_YKNetworking_YKNetworkingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED63A7E6656212E14BAE29E6 /* Pods_YKNetworking_YKNetworkingUITests.framework */; };
+		5C01845EA22CB43CAC484A03 /* Pods_YKNetworkingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 786EE312A5201A276EF34A31 /* Pods_YKNetworkingTests.framework */; };
+		62633C62798A459EFFC656BF /* Pods_YKNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C1A12AE46C57BE986CD0921 /* Pods_YKNetworking.framework */; };
 		8DADF695263948B600C0D0C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DADF694263948B600C0D0C0 /* AppDelegate.m */; };
 		8DADF6A0263948B900C0D0C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DADF69F263948B900C0D0C0 /* Assets.xcassets */; };
 		8DADF6A3263948B900C0D0C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DADF6A1263948B900C0D0C0 /* LaunchScreen.storyboard */; };
@@ -34,6 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C1A12AE46C57BE986CD0921 /* Pods_YKNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YKNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5263BE2249335F0A8F6817DA /* Pods-YKNetworking-YKNetworkingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YKNetworking-YKNetworkingUITests.debug.xcconfig"; path = "Target Support Files/Pods-YKNetworking-YKNetworkingUITests/Pods-YKNetworking-YKNetworkingUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6715D5934EAB6EDED99DE673 /* Pods-YKNetworking-YKNetworkingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YKNetworking-YKNetworkingUITests.release.xcconfig"; path = "Target Support Files/Pods-YKNetworking-YKNetworkingUITests/Pods-YKNetworking-YKNetworkingUITests.release.xcconfig"; sourceTree = "<group>"; };
+		70DE7373F34E7FF0D9BD36A1 /* Pods-YKNetworkingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YKNetworkingTests.release.xcconfig"; path = "Target Support Files/Pods-YKNetworkingTests/Pods-YKNetworkingTests.release.xcconfig"; sourceTree = "<group>"; };
+		74CE02DC7D4E8805E52E24EB /* Pods-YKNetworking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YKNetworking.release.xcconfig"; path = "Target Support Files/Pods-YKNetworking/Pods-YKNetworking.release.xcconfig"; sourceTree = "<group>"; };
+		786EE312A5201A276EF34A31 /* Pods_YKNetworkingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YKNetworkingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DADF690263948B600C0D0C0 /* YKNetworking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YKNetworking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DADF693263948B600C0D0C0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8DADF694263948B600C0D0C0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -49,6 +58,9 @@
 		8DADF6BC263948B900C0D0C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DADF6D7263949F000C0D0C0 /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		8DADF6D8263949F000C0D0C0 /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		B5740F57E026F2480F0D428F /* Pods-YKNetworkingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YKNetworkingTests.debug.xcconfig"; path = "Target Support Files/Pods-YKNetworkingTests/Pods-YKNetworkingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CCD24BA88C49893B54085270 /* Pods-YKNetworking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YKNetworking.debug.xcconfig"; path = "Target Support Files/Pods-YKNetworking/Pods-YKNetworking.debug.xcconfig"; sourceTree = "<group>"; };
+		ED63A7E6656212E14BAE29E6 /* Pods_YKNetworking_YKNetworkingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YKNetworking_YKNetworkingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62633C62798A459EFFC656BF /* Pods_YKNetworking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C01845EA22CB43CAC484A03 /* Pods_YKNetworkingTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E418426C2091844DD61CCAB /* Pods_YKNetworking_YKNetworkingUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		851424BECC535B336593EDC3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CCD24BA88C49893B54085270 /* Pods-YKNetworking.debug.xcconfig */,
+				74CE02DC7D4E8805E52E24EB /* Pods-YKNetworking.release.xcconfig */,
+				5263BE2249335F0A8F6817DA /* Pods-YKNetworking-YKNetworkingUITests.debug.xcconfig */,
+				6715D5934EAB6EDED99DE673 /* Pods-YKNetworking-YKNetworkingUITests.release.xcconfig */,
+				B5740F57E026F2480F0D428F /* Pods-YKNetworkingTests.debug.xcconfig */,
+				70DE7373F34E7FF0D9BD36A1 /* Pods-YKNetworkingTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8DADF687263948B600C0D0C0 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +112,8 @@
 				8DADF6AE263948B900C0D0C0 /* YKNetworkingTests */,
 				8DADF6B9263948B900C0D0C0 /* YKNetworkingUITests */,
 				8DADF691263948B600C0D0C0 /* Products */,
+				851424BECC535B336593EDC3 /* Pods */,
+				CF105F66A414EB4D1476CC19 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,6 +160,16 @@
 			path = YKNetworkingUITests;
 			sourceTree = "<group>";
 		};
+		CF105F66A414EB4D1476CC19 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C1A12AE46C57BE986CD0921 /* Pods_YKNetworking.framework */,
+				ED63A7E6656212E14BAE29E6 /* Pods_YKNetworking_YKNetworkingUITests.framework */,
+				786EE312A5201A276EF34A31 /* Pods_YKNetworkingTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -136,9 +177,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8DADF6BF263948B900C0D0C0 /* Build configuration list for PBXNativeTarget "YKNetworking" */;
 			buildPhases = (
+				08AD41860F372A129FDBEF49 /* [CP] Check Pods Manifest.lock */,
 				8DADF68C263948B600C0D0C0 /* Sources */,
 				8DADF68D263948B600C0D0C0 /* Frameworks */,
 				8DADF68E263948B600C0D0C0 /* Resources */,
+				F268DA82D596775FAF15260C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -153,6 +196,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8DADF6C2263948B900C0D0C0 /* Build configuration list for PBXNativeTarget "YKNetworkingTests" */;
 			buildPhases = (
+				0FDF91D8451689CBC268660A /* [CP] Check Pods Manifest.lock */,
 				8DADF6A7263948B900C0D0C0 /* Sources */,
 				8DADF6A8263948B900C0D0C0 /* Frameworks */,
 				8DADF6A9263948B900C0D0C0 /* Resources */,
@@ -171,9 +215,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8DADF6C5263948B900C0D0C0 /* Build configuration list for PBXNativeTarget "YKNetworkingUITests" */;
 			buildPhases = (
+				AC7D4EB20302E879B78D7125 /* [CP] Check Pods Manifest.lock */,
 				8DADF6B2263948B900C0D0C0 /* Sources */,
 				8DADF6B3263948B900C0D0C0 /* Frameworks */,
 				8DADF6B4263948B900C0D0C0 /* Resources */,
+				BA4B98218C8A21F4AAFEF8E8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -251,6 +297,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08AD41860F372A129FDBEF49 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YKNetworking-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0FDF91D8451689CBC268660A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YKNetworkingTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC7D4EB20302E879B78D7125 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YKNetworking-YKNetworkingUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA4B98218C8A21F4AAFEF8E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YKNetworking-YKNetworkingUITests/Pods-YKNetworking-YKNetworkingUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YKNetworking-YKNetworkingUITests/Pods-YKNetworking-YKNetworkingUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YKNetworking-YKNetworkingUITests/Pods-YKNetworking-YKNetworkingUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F268DA82D596775FAF15260C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YKNetworking/Pods-YKNetworking-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YKNetworking/Pods-YKNetworking-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YKNetworking/Pods-YKNetworking-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8DADF68C263948B600C0D0C0 /* Sources */ = {
@@ -420,6 +569,7 @@
 		};
 		8DADF6C0263948B900C0D0C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCD24BA88C49893B54085270 /* Pods-YKNetworking.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -438,6 +588,7 @@
 		};
 		8DADF6C1263948B900C0D0C0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74CE02DC7D4E8805E52E24EB /* Pods-YKNetworking.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -456,6 +607,7 @@
 		};
 		8DADF6C3263948B900C0D0C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5740F57E026F2480F0D428F /* Pods-YKNetworkingTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -476,6 +628,7 @@
 		};
 		8DADF6C4263948B900C0D0C0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70DE7373F34E7FF0D9BD36A1 /* Pods-YKNetworkingTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -496,6 +649,7 @@
 		};
 		8DADF6C6263948B900C0D0C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5263BE2249335F0A8F6817DA /* Pods-YKNetworking-YKNetworkingUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8J8RJU33QJ;
@@ -514,6 +668,7 @@
 		};
 		8DADF6C7263948B900C0D0C0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6715D5934EAB6EDED99DE673 /* Pods-YKNetworking-YKNetworkingUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8J8RJU33QJ;
