@@ -1,0 +1,575 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8DADF695263948B600C0D0C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DADF694263948B600C0D0C0 /* AppDelegate.m */; };
+		8DADF6A0263948B900C0D0C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DADF69F263948B900C0D0C0 /* Assets.xcassets */; };
+		8DADF6A3263948B900C0D0C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DADF6A1263948B900C0D0C0 /* LaunchScreen.storyboard */; };
+		8DADF6A6263948B900C0D0C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DADF6A5263948B900C0D0C0 /* main.m */; };
+		8DADF6B0263948B900C0D0C0 /* YKNetworkingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DADF6AF263948B900C0D0C0 /* YKNetworkingTests.m */; };
+		8DADF6BB263948B900C0D0C0 /* YKNetworkingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DADF6BA263948B900C0D0C0 /* YKNetworkingUITests.m */; };
+		8DADF6D9263949F000C0D0C0 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DADF6D8263949F000C0D0C0 /* TableViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8DADF6AC263948B900C0D0C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8DADF688263948B600C0D0C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DADF68F263948B600C0D0C0;
+			remoteInfo = YKNetworking;
+		};
+		8DADF6B7263948B900C0D0C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8DADF688263948B600C0D0C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DADF68F263948B600C0D0C0;
+			remoteInfo = YKNetworking;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8DADF690263948B600C0D0C0 /* YKNetworking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YKNetworking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DADF693263948B600C0D0C0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8DADF694263948B600C0D0C0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8DADF69F263948B900C0D0C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8DADF6A2263948B900C0D0C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8DADF6A4263948B900C0D0C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DADF6A5263948B900C0D0C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8DADF6AB263948B900C0D0C0 /* YKNetworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YKNetworkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DADF6AF263948B900C0D0C0 /* YKNetworkingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YKNetworkingTests.m; sourceTree = "<group>"; };
+		8DADF6B1263948B900C0D0C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DADF6B6263948B900C0D0C0 /* YKNetworkingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YKNetworkingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DADF6BA263948B900C0D0C0 /* YKNetworkingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YKNetworkingUITests.m; sourceTree = "<group>"; };
+		8DADF6BC263948B900C0D0C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DADF6D7263949F000C0D0C0 /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		8DADF6D8263949F000C0D0C0 /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DADF68D263948B600C0D0C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DADF6A8263948B900C0D0C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DADF6B3263948B900C0D0C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8DADF687263948B600C0D0C0 = {
+			isa = PBXGroup;
+			children = (
+				8DADF692263948B600C0D0C0 /* YKNetworking */,
+				8DADF6AE263948B900C0D0C0 /* YKNetworkingTests */,
+				8DADF6B9263948B900C0D0C0 /* YKNetworkingUITests */,
+				8DADF691263948B600C0D0C0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8DADF691263948B600C0D0C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DADF690263948B600C0D0C0 /* YKNetworking.app */,
+				8DADF6AB263948B900C0D0C0 /* YKNetworkingTests.xctest */,
+				8DADF6B6263948B900C0D0C0 /* YKNetworkingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8DADF692263948B600C0D0C0 /* YKNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				8DADF693263948B600C0D0C0 /* AppDelegate.h */,
+				8DADF694263948B600C0D0C0 /* AppDelegate.m */,
+				8DADF6D7263949F000C0D0C0 /* TableViewController.h */,
+				8DADF6D8263949F000C0D0C0 /* TableViewController.m */,
+				8DADF69F263948B900C0D0C0 /* Assets.xcassets */,
+				8DADF6A1263948B900C0D0C0 /* LaunchScreen.storyboard */,
+				8DADF6A4263948B900C0D0C0 /* Info.plist */,
+				8DADF6A5263948B900C0D0C0 /* main.m */,
+			);
+			path = YKNetworking;
+			sourceTree = "<group>";
+		};
+		8DADF6AE263948B900C0D0C0 /* YKNetworkingTests */ = {
+			isa = PBXGroup;
+			children = (
+				8DADF6AF263948B900C0D0C0 /* YKNetworkingTests.m */,
+				8DADF6B1263948B900C0D0C0 /* Info.plist */,
+			);
+			path = YKNetworkingTests;
+			sourceTree = "<group>";
+		};
+		8DADF6B9263948B900C0D0C0 /* YKNetworkingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8DADF6BA263948B900C0D0C0 /* YKNetworkingUITests.m */,
+				8DADF6BC263948B900C0D0C0 /* Info.plist */,
+			);
+			path = YKNetworkingUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8DADF68F263948B600C0D0C0 /* YKNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8DADF6BF263948B900C0D0C0 /* Build configuration list for PBXNativeTarget "YKNetworking" */;
+			buildPhases = (
+				8DADF68C263948B600C0D0C0 /* Sources */,
+				8DADF68D263948B600C0D0C0 /* Frameworks */,
+				8DADF68E263948B600C0D0C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YKNetworking;
+			productName = YKNetworking;
+			productReference = 8DADF690263948B600C0D0C0 /* YKNetworking.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8DADF6AA263948B900C0D0C0 /* YKNetworkingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8DADF6C2263948B900C0D0C0 /* Build configuration list for PBXNativeTarget "YKNetworkingTests" */;
+			buildPhases = (
+				8DADF6A7263948B900C0D0C0 /* Sources */,
+				8DADF6A8263948B900C0D0C0 /* Frameworks */,
+				8DADF6A9263948B900C0D0C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8DADF6AD263948B900C0D0C0 /* PBXTargetDependency */,
+			);
+			name = YKNetworkingTests;
+			productName = YKNetworkingTests;
+			productReference = 8DADF6AB263948B900C0D0C0 /* YKNetworkingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8DADF6B5263948B900C0D0C0 /* YKNetworkingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8DADF6C5263948B900C0D0C0 /* Build configuration list for PBXNativeTarget "YKNetworkingUITests" */;
+			buildPhases = (
+				8DADF6B2263948B900C0D0C0 /* Sources */,
+				8DADF6B3263948B900C0D0C0 /* Frameworks */,
+				8DADF6B4263948B900C0D0C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8DADF6B8263948B900C0D0C0 /* PBXTargetDependency */,
+			);
+			name = YKNetworkingUITests;
+			productName = YKNetworkingUITests;
+			productReference = 8DADF6B6263948B900C0D0C0 /* YKNetworkingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8DADF688263948B600C0D0C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					8DADF68F263948B600C0D0C0 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					8DADF6AA263948B900C0D0C0 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 8DADF68F263948B600C0D0C0;
+					};
+					8DADF6B5263948B900C0D0C0 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 8DADF68F263948B600C0D0C0;
+					};
+				};
+			};
+			buildConfigurationList = 8DADF68B263948B600C0D0C0 /* Build configuration list for PBXProject "YKNetworking" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8DADF687263948B600C0D0C0;
+			productRefGroup = 8DADF691263948B600C0D0C0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DADF68F263948B600C0D0C0 /* YKNetworking */,
+				8DADF6AA263948B900C0D0C0 /* YKNetworkingTests */,
+				8DADF6B5263948B900C0D0C0 /* YKNetworkingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8DADF68E263948B600C0D0C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DADF6A3263948B900C0D0C0 /* LaunchScreen.storyboard in Resources */,
+				8DADF6A0263948B900C0D0C0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DADF6A9263948B900C0D0C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DADF6B4263948B900C0D0C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DADF68C263948B600C0D0C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DADF695263948B600C0D0C0 /* AppDelegate.m in Sources */,
+				8DADF6D9263949F000C0D0C0 /* TableViewController.m in Sources */,
+				8DADF6A6263948B900C0D0C0 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DADF6A7263948B900C0D0C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DADF6B0263948B900C0D0C0 /* YKNetworkingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DADF6B2263948B900C0D0C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DADF6BB263948B900C0D0C0 /* YKNetworkingUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8DADF6AD263948B900C0D0C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DADF68F263948B600C0D0C0 /* YKNetworking */;
+			targetProxy = 8DADF6AC263948B900C0D0C0 /* PBXContainerItemProxy */;
+		};
+		8DADF6B8263948B900C0D0C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DADF68F263948B600C0D0C0 /* YKNetworking */;
+			targetProxy = 8DADF6B7263948B900C0D0C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8DADF6A1263948B900C0D0C0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8DADF6A2263948B900C0D0C0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8DADF6BD263948B900C0D0C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8DADF6BE263948B900C0D0C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8DADF6C0263948B900C0D0C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8J8RJU33QJ;
+				INFOPLIST_FILE = YKNetworking/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kevin.Platform.com.YKNetworking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8DADF6C1263948B900C0D0C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8J8RJU33QJ;
+				INFOPLIST_FILE = YKNetworking/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kevin.Platform.com.YKNetworking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8DADF6C3263948B900C0D0C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8J8RJU33QJ;
+				INFOPLIST_FILE = YKNetworkingTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kevin.Platform.com.YKNetworkingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YKNetworking.app/YKNetworking";
+			};
+			name = Debug;
+		};
+		8DADF6C4263948B900C0D0C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8J8RJU33QJ;
+				INFOPLIST_FILE = YKNetworkingTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kevin.Platform.com.YKNetworkingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YKNetworking.app/YKNetworking";
+			};
+			name = Release;
+		};
+		8DADF6C6263948B900C0D0C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8J8RJU33QJ;
+				INFOPLIST_FILE = YKNetworkingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kevin.Platform.com.YKNetworkingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YKNetworking;
+			};
+			name = Debug;
+		};
+		8DADF6C7263948B900C0D0C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8J8RJU33QJ;
+				INFOPLIST_FILE = YKNetworkingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kevin.Platform.com.YKNetworkingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YKNetworking;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8DADF68B263948B600C0D0C0 /* Build configuration list for PBXProject "YKNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DADF6BD263948B900C0D0C0 /* Debug */,
+				8DADF6BE263948B900C0D0C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8DADF6BF263948B900C0D0C0 /* Build configuration list for PBXNativeTarget "YKNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DADF6C0263948B900C0D0C0 /* Debug */,
+				8DADF6C1263948B900C0D0C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8DADF6C2263948B900C0D0C0 /* Build configuration list for PBXNativeTarget "YKNetworkingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DADF6C3263948B900C0D0C0 /* Debug */,
+				8DADF6C4263948B900C0D0C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8DADF6C5263948B900C0D0C0 /* Build configuration list for PBXNativeTarget "YKNetworkingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DADF6C6263948B900C0D0C0 /* Debug */,
+				8DADF6C7263948B900C0D0C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8DADF688263948B600C0D0C0 /* Project object */;
+}
