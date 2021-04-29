@@ -16,16 +16,14 @@ typedef NS_ENUM(NSUInteger, YKCacheType){
     YKCacheTypeCache,
     /** 先获取网络数据并缓存，如果获取失败则从缓存中拿数据 */
     YKCacheTypeNetwork,
-    /** 重新请求网络数据,不读写缓存,用于刷新加载区分标识使用 */
-    YKCacheTypeRefreshMore,
     /** 先获取缓存数据,再请求网络数据并缓存，若缓存数据与网络数据不一致Block将产生两次调用 */
     YKCacheTypeCacheAndNetwork
 };
 
 // HTTP请求类型
-typedef NS_ENMU(NSUInteger, YKRequestMethodType){
+typedef NS_ENUM(NSUInteger, YKRequestMethodType){
     /** GET */
-    YKRequestMethodTypeGET,
+    YKRequestMethodTypeGET = 0,
     /** POST */
     YKRequestMethodTypePOST,
     /** PUT */
@@ -40,13 +38,13 @@ typedef NS_ENMU(NSUInteger, YKRequestMethodType){
     YKRequestMethodTypeDELETE
 };
 
-// 请求参数的格式
-typedef NS_ENMU(NSUInteger, YKRequestSerializerType){
+//// 请求参数的格式
+typedef NS_ENUM(NSUInteger, YKRequestSerializerType){
     /** 请求数据为JSON格式 */
     YKRequestSerializerTypeJSON,
     /** 请求数据为二进制格式 */
     YKRequestSerializerTypeHTTP
-}
+};
 
 
 // 返回响应数据的格式.
@@ -69,9 +67,20 @@ typedef NS_ENUM(NSUInteger, YKNetworkReachabilityStatus) {
     YKNetworkReachabilityStatusWiFi         = 2
 };
 
-// 网络状态回调
+// 网络状态block
 typedef void(^YKNetworkStatusBlock)(YKNetworkReachabilityStatus status);
 
+// 网络请求结果回调block
+typedef void(^YKHttpRequestResultBlock)(BOOL isSuccess, id _Nullable responseObject, NSError * _Nullable error);
+ 
+// 网络请求结果成功回调block
+typedef void(^YKHttpRequsetSuccessBlock)(NSURLSessionDataTask * _Nonnull dataTask,id _Nullable responseObject);
+
+// 网络请求结果失败回调block
+typedef void(^YKHttpRequsetFailBlock)(NSURLSessionDataTask * _Nonnull dataTask,NSError * _Nullable error);
+
+// 进度回调block
+typedef void(^YKHttpRequestProgressBlock)(NSProgress * _Nullable progress);
 
 
 
