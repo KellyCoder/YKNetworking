@@ -13,6 +13,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (void)logSocket:(NSArray *)logArray;
 
+/// 拼接URL和参数
+/// @param params 参数
+/// @param urlLink url
++ (NSString *)connectWithparams:(NSMutableDictionary *)params url:(NSString *)urlLink;
+
 @end
 
 NS_ASSUME_NONNULL_END

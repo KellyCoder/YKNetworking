@@ -129,7 +129,7 @@ static NSTimeInterval const TimeoutIntervalDefault = 15.0;
     }
     NSArray *logArray = @[
     @{@"result" : isSuccess},
-    @{@"url" : url},
+    @{@"urlLink" : [YKNetworkTool connectWithparams:parameters.mutableCopy url:url]},
     @{@"parameters" : parameters ? parameters : [NSNull null]},
     @{@"responseObject" : responseObject ? responseObject : [NSNull null]}];
     [YKNetworkTool logSocket:logArray];

@@ -124,7 +124,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// 取消所有请求
 - (void)cancelAllRequest;
 
-/// 取消置顶网络请求
+/// 取消指定网络请求
 /// @param identifier taskId
 - (void)cancelRequestByIdentifier:(NSUInteger)identifier;
 

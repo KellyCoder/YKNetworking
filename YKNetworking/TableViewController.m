@@ -35,9 +35,14 @@ static NSString * kDownloadUrl = @"下载URL";
     
     // 在APPDelegate 设置base data
     [YKRequestManager setBaseConfig:^(YKRequestConfig * _Nonnull configObj) {
-        configObj.baseServer = @"URL域名";
+        configObj.baseServer = @"base url";
         configObj.baseParameters = @{@"common":@"test"};
         configObj.consoleLog = YES;
+        configObj.indicatorEnabled = YES;
+        configObj.headers = @{@"key":@"value"};
+        configObj.requestSerializerType = YKRequestSerializerTypeJSON;
+        configObj.responseSerializerType = YKResponseSerializerTypeJSON;
+        configObj.timeoutInterval = 10.;
     }];
     
     
@@ -96,12 +101,12 @@ static NSString * kDownloadUrl = @"下载URL";
     
     if (indexPath.row == 0) {
         
-        [YKRequestManager requestGETWithURL:@"请求" parameters:@{@"key":@"value",@"locale":@"end"} cacheType:YKCacheTypeRefresh completionHandler:^(BOOL isSuccess, id  _Nullable responseObject, NSError * _Nullable error) {
+        [YKRequestManager requestGETWithURL:@"请求URL" parameters:@{@"key":@"value",@"locale":@"end"} cacheType:YKCacheTypeRefresh completionHandler:^(BOOL isSuccess, id  _Nullable responseObject, NSError * _Nullable error) {
         }];
         
     }else if (indexPath.row == 1) {
         
-        [YKRequestManager requestPOSTWithURL:@"请求的URL" parameters:@{@"key":@"value",@"locale":@"end"} cacheType:YKCacheTypeRefresh completionHandler:^(BOOL isSuccess, id  _Nullable responseObject, NSError * _Nullable error) {
+        [YKRequestManager requestPOSTWithURL:@"0请求URL" parameters:@{@"key":@"value",@"locale":@"end"}  cacheType:YKCacheTypeRefresh completionHandler:^(BOOL isSuccess, id  _Nullable responseObject, NSError * _Nullable error) {
         }];
         
     }else if (indexPath.row == 2) {
