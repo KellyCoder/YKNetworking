@@ -9,6 +9,9 @@
 #import <YYCache/YYCache.h>
 
 static NSString * const YKNetworkCache = @"YKNetworkCache";
+static NSString * const YKPathSpace = @"YKKit";
+static NSString * const YKDownloadPath = @"YKDownload";
+
 
 @interface YKCacheNetworkManager ()
 
@@ -73,6 +76,49 @@ static NSString * const YKNetworkCache = @"YKNetworkCache";
 
 - (void)getAllObjectCacheSizeBlock:(void(^)(NSInteger totalCount))block{
     [self.dataCache.diskCache totalCountWithBlock:block];
+}
+
+#pragma mark - 沙盒
+- (NSString *)homePath{
+    return NSHomeDirectory();
+}
+
+- (NSString *)documentPath{
+    return [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+}
+
+- (NSString *)libraryPath{
+    return [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) lastObject];
+}
+
+- (NSString *)cachesPath{
+    return [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject];
+}
+
+- (NSString *)tmpPath{
+    return NSTemporaryDirectory();
+}
+
+- (NSString *)YKKitPath{
+    NSString *path = [[self cachesPath] stringByAppendingPathComponent:YKPathSpace];
+    [self createDirectoryAtPath:path];
+    return path;
+}
+
+- (NSString *)downloadPath{
+    NSString *path = [[[self cachesPath] stringByAppendingPathComponent:YKPathSpace] stringByAppendingPathComponent:YKDownloadPath];
+    [self createDirectoryAtPath:path];
+    
+    return path;
+}
+
+- (void)createDirectoryAtPath:(NSString *)path{
+    if (![[NSFileManager defaultManager] fileExistsAtPath:path]) {
+//        NSLog(@" ========================== >>> 创建文件夹: %@ ", path);
+        [[NSFileManager defaultManager] createDirectoryAtPath:path withIntermediateDirectories:YES attributes:nil error:nil];
+    } else {
+//        NSLog(@" ========================== >>> 文件夹已存在: %@ ", path);
+    }
 }
 
 @end

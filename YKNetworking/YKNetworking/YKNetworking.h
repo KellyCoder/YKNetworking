@@ -9,6 +9,7 @@
 #define YKNetworking_h
 
 #import "YKNetworkingConst.h"
-#import "YKNetworkingEngine.h"
+#import "YKNetworkObject.h"
+#import "YKRequestManager.h"
 
 #endif /* YKNetworking_h */

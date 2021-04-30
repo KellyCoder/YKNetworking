@@ -10,24 +10,21 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class YKUploadObject;
+@class YKUploadObject,YKRequestConfig;
 
 @interface YKNetworkingEngine : AFHTTPSessionManager
-
-/** 根路径 */
-@property (nonatomic,copy) NSString *baseUrl;
-/** 公共基础参数 */
-@property (nonatomic,copy) NSDictionary *baseParameters;
-/** 旋转菊花开关,默认开 */
-@property (nonatomic) BOOL IndicatorEnabled;
 
 + (instancetype)sharedInstance;
 
 #pragma mark - Public Method
+
+/// 设置基础配置
+/// @param config config
+- (void)setBaseConfig:(YKRequestConfig *)config;
+
 /// 获取网络状态
 /// @param networkStatusBlock 网络状态
 - (void)networkStatus:(YKNetworkStatusBlock)networkStatusBlock;
-
 
 #pragma mark - Request Method
 
@@ -116,21 +113,37 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param savePath 文件保存路径
 /// @param progress 进度
 /// @param completionHandler 下载完成回调
-- (void)downloadWithURL:(NSString *)url
-             resumeData:(NSData *)resumeData
-               savePath:(NSString *)savePath
-               progress:(YKHttpRequestProgressBlock)progress
-      completionHandler:(void (^)(NSURLResponse *response, NSURL *filePath, NSError *error))completionHandler;
+- (NSURLSessionDownloadTask *)downloadWithURL:(NSString *)url
+                                   resumeData:(nullable NSData *)resumeData
+                                     savePath:(NSString *)savePath
+                                     progress:(YKHttpRequestProgressBlock)progress
+                            completionHandler:(void (^)(NSURLResponse *response, NSURL *filePath, NSError *error))completionHandler;
 
+
+#pragma mark - 取消请求
 /// 取消所有请求
 - (void)cancelAllRequest;
 
+/// 取消置顶网络请求
+/// @param identifier taskId
+- (void)cancelRequestByIdentifier:(NSUInteger)identifier;
+
+#pragma mark - task管理
+
+/// 设置task
+/// @param object object
+/// @param key url
+- (void)setTaskObject:(id)object forKey:(NSString *)key;
+
+/// 删除task
+/// @param key url
+- (void)removeTaskObjectForKey:(NSString *)key;
+
+/// 获取对应task
+/// @param key url
+- (id)getTaskObjectForKey:(NSString *)key;
+
 #pragma mark - AFHTTPSessionManager默认设置
-
-/// 设置请求超时时间,default:15s
-/// @param timeoutInterval timeoutInterval
-- (void)setRequestTimeoutInterval:(NSTimeInterval)timeoutInterval;
-
 /// 设置请求参数格式,default:JSON
 /// @param requestSerializerType YKRequestSerializerType
 - (void)setRequestSerializerConfig:(YKRequestSerializerType)requestSerializerType;
@@ -148,10 +161,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param cerPath 证书路径
 /// @param validatesDomainName 是否验证域名,default:YES,
 - (void)setSecurityPolicyWithCerPath:(NSString *)cerPath validatesDomainName:(BOOL)validatesDomainName;
-
-/// 设置请求头
-/// @param header header
-- (void)setHeader:(NSDictionary *)header;
 
 @end
 

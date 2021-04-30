@@ -10,8 +10,10 @@
 		0E418426C2091844DD61CCAB /* Pods_YKNetworking_YKNetworkingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED63A7E6656212E14BAE29E6 /* Pods_YKNetworking_YKNetworkingUITests.framework */; };
 		5C01845EA22CB43CAC484A03 /* Pods_YKNetworkingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 786EE312A5201A276EF34A31 /* Pods_YKNetworkingTests.framework */; };
 		62633C62798A459EFFC656BF /* Pods_YKNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C1A12AE46C57BE986CD0921 /* Pods_YKNetworking.framework */; };
+		8D5E1A59263BD0D0002B7A4A /* YKNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D5E1A58263BD0D0002B7A4A /* YKNetworkTool.m */; };
 		8D60E343263A448C008FBF51 /* YKCacheNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D60E342263A448C008FBF51 /* YKCacheNetworkManager.m */; };
 		8D60E349263A87B2008FBF51 /* YKNetworkObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D60E348263A87B2008FBF51 /* YKNetworkObject.m */; };
+		8D62A60E263AB2EB004A25E4 /* YKRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D62A60D263AB2EB004A25E4 /* YKRequestManager.m */; };
 		8DADF695263948B600C0D0C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DADF694263948B600C0D0C0 /* AppDelegate.m */; };
 		8DADF6A0263948B900C0D0C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DADF69F263948B900C0D0C0 /* Assets.xcassets */; };
 		8DADF6A3263948B900C0D0C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DADF6A1263948B900C0D0C0 /* LaunchScreen.storyboard */; };
@@ -46,10 +48,14 @@
 		70DE7373F34E7FF0D9BD36A1 /* Pods-YKNetworkingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YKNetworkingTests.release.xcconfig"; path = "Target Support Files/Pods-YKNetworkingTests/Pods-YKNetworkingTests.release.xcconfig"; sourceTree = "<group>"; };
 		74CE02DC7D4E8805E52E24EB /* Pods-YKNetworking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YKNetworking.release.xcconfig"; path = "Target Support Files/Pods-YKNetworking/Pods-YKNetworking.release.xcconfig"; sourceTree = "<group>"; };
 		786EE312A5201A276EF34A31 /* Pods_YKNetworkingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YKNetworkingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D5E1A57263BD0D0002B7A4A /* YKNetworkTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YKNetworkTool.h; sourceTree = "<group>"; };
+		8D5E1A58263BD0D0002B7A4A /* YKNetworkTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YKNetworkTool.m; sourceTree = "<group>"; };
 		8D60E341263A448C008FBF51 /* YKCacheNetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YKCacheNetworkManager.h; sourceTree = "<group>"; };
 		8D60E342263A448C008FBF51 /* YKCacheNetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YKCacheNetworkManager.m; sourceTree = "<group>"; };
 		8D60E347263A87B2008FBF51 /* YKNetworkObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YKNetworkObject.h; sourceTree = "<group>"; };
 		8D60E348263A87B2008FBF51 /* YKNetworkObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YKNetworkObject.m; sourceTree = "<group>"; };
+		8D62A60C263AB2EB004A25E4 /* YKRequestManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YKRequestManager.h; sourceTree = "<group>"; };
+		8D62A60D263AB2EB004A25E4 /* YKRequestManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YKRequestManager.m; sourceTree = "<group>"; };
 		8DADF690263948B600C0D0C0 /* YKNetworking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YKNetworking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DADF693263948B600C0D0C0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8DADF694263948B600C0D0C0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -178,10 +184,14 @@
 				8DADF6F1263952A500C0D0C0 /* YKNetworkingConst.h */,
 				8D60E347263A87B2008FBF51 /* YKNetworkObject.h */,
 				8D60E348263A87B2008FBF51 /* YKNetworkObject.m */,
-				8DADF6F2263952F200C0D0C0 /* YKNetworkingEngine.h */,
-				8DADF6F3263952F200C0D0C0 /* YKNetworkingEngine.m */,
+				8D5E1A57263BD0D0002B7A4A /* YKNetworkTool.h */,
+				8D5E1A58263BD0D0002B7A4A /* YKNetworkTool.m */,
 				8D60E341263A448C008FBF51 /* YKCacheNetworkManager.h */,
 				8D60E342263A448C008FBF51 /* YKCacheNetworkManager.m */,
+				8D62A60C263AB2EB004A25E4 /* YKRequestManager.h */,
+				8D62A60D263AB2EB004A25E4 /* YKRequestManager.m */,
+				8DADF6F2263952F200C0D0C0 /* YKNetworkingEngine.h */,
+				8DADF6F3263952F200C0D0C0 /* YKNetworkingEngine.m */,
 			);
 			path = YKNetworking;
 			sourceTree = "<group>";
@@ -432,11 +442,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D62A60E263AB2EB004A25E4 /* YKRequestManager.m in Sources */,
 				8DADF695263948B600C0D0C0 /* AppDelegate.m in Sources */,
 				8D60E343263A448C008FBF51 /* YKCacheNetworkManager.m in Sources */,
 				8DADF6F4263952F200C0D0C0 /* YKNetworkingEngine.m in Sources */,
 				8D60E349263A87B2008FBF51 /* YKNetworkObject.m in Sources */,
 				8DADF6D9263949F000C0D0C0 /* TableViewController.m in Sources */,
+				8D5E1A59263BD0D0002B7A4A /* YKNetworkTool.m in Sources */,
 				8DADF6A6263948B900C0D0C0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -27,6 +27,10 @@
 
 @end
 
+#pragma mark - 基础配置类
+@implementation YKRequestConfig
+@end
+
 
 #pragma mark - upload
 @implementation YKUploadObject
