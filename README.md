@@ -86,4 +86,26 @@
 - (void)cancelRequestByIdentifier:(NSUInteger)identifier;
 ```
 
+#### 6.Log ####
+优雅明了打印,更方便查看返回数据
+```
+- (void)logSocketWithURL:(NSString *)url
+              parameters:(nullable NSDictionary *)parameters
+          responseObject:(id)responseObject{
+    if (!self.consoleLog) return;
+    NSString *isSuccess = @"success";
+    if ([responseObject isKindOfClass:[NSError class]]) {
+        isSuccess = @"failure";
+    }
+    NSArray *logArray = @[
+    @{@"result" : isSuccess},
+    @{@"urlLink" : [YKNetworkTool connectWithparams:parameters.mutableCopy url:url]},
+    @{@"parameters" : parameters ? parameters : [NSNull null]},
+    @{@"responseObject" : responseObject ? responseObject : [NSNull null]}];
+    [YKNetworkTool logSocket:logArray];
+}
+
+```
+
+
 版本会持续更新,有问题请联系QQ:326054969,请添加备注,谢谢~
