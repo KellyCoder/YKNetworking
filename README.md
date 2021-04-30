@@ -1,5 +1,5 @@
 # YKNetworking
- 1. 基于AFNetworking 4.0封装,提供多类型GET、POST、PUT、PATCH、DELEGATE、Upload、Download请求,
+ 1. 基于AFNetworking 4.0封装,提供多类型GET、POST、PUT、PATCH、DELEGATE、Upload、Download请求
  2. 通过block配置回调数据
  3. 提供断点续传
  4. 提供沙盒缓存机制
@@ -16,9 +16,11 @@
  /** 先获取缓存数据,再请求网络数据并缓存，若缓存数据与网络数据不一致Block将产生两次调用 */
  YKCacheTypeCacheAndNetwork
  ```
+ 详细用法参考[YKNetworking](https://github.com/KellyCoder/YKNetworking)
 
  ## 使用 ##
  
+
  ### 公共配置 ###
  需要新增配置,在此文件添加即可
  ```
