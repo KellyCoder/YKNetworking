@@ -23,7 +23,7 @@ static NSString * const YKDownloadPath = @"YKDownload";
 @implementation YKCacheNetworkManager
 
 #pragma mark - init
-+ (instancetype)sharedInstance{
++ (YKCacheNetworkManager *)sharedInstance{
     static YKCacheNetworkManager *sharedInstance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{

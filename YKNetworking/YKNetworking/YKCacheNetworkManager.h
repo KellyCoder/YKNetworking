@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface YKCacheNetworkManager : NSObject
 
-+ (instancetype)sharedInstance;
++ (YKCacheNetworkManager *)sharedInstance;
 
 /// 对应key是否存在缓存
 /// @param key key
